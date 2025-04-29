@@ -1,0 +1,348 @@
+.dashboard-container {
+  padding: var(--spacing-lg);
+}
+
+.dashboard-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.dashboard-header h1 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xs);
+}
+
+.dashboard-subtitle {
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.dashboard-card {
+  background-color: white;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+  height: 100%;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid #eee;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  color: var(--primary-color);
+}
+
+.card-action {
+  color: var(--primary-color);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+/* Profile Summary Card */
+.profile-summary {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.profile-details {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+}
+
+.profile-info h3 {
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.profile-info p {
+  margin: 0 0 var(--spacing-xs) 0;
+  color: var(--text-secondary);
+}
+
+.profile-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-sm);
+}
+
+.credential-badge {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: var(--primary-color);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+}
+
+.profile-alert {
+  background-color: rgba(255, 193, 7, 0.1);
+  border-left: 3px solid var(--warning-color);
+  padding: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+}
+
+.profile-alert p {
+  margin: 0 0 var(--spacing-sm) 0;
+  color: var(--text-primary);
+}
+
+/* Recent Jobs Card */
+.recent-jobs {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.jobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.job-item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid #eee;
+}
+
+.job-item:last-child {
+  border-bottom: none;
+}
+
+.job-details h3 {
+  margin: 0 0 var(--spacing-xs) 0;
+  font-size: var(--font-size-md);
+}
+
+.job-location, .job-date {
+  margin: 0 0 var(--spacing-xs) 0;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.job-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--spacing-sm);
+}
+
+.view-job-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  text-align: center;
+}
+
+.view-job-button:hover {
+  background-color: var(--primary-dark);
+  text-decoration: none;
+  color: white;
+}
+
+/* Applications Card */
+.applications {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.applications-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.application-item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid #eee;
+}
+
+.application-item:last-child {
+  border-bottom: none;
+}
+
+.application-details h3 {
+  margin: 0 0 var(--spacing-xs) 0;
+  font-size: var(--font-size-md);
+}
+
+.application-date {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+/* Training Card */
+.training {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+.no-courses {
+  text-align: center;
+  padding: var(--spacing-lg) 0;
+}
+
+.courses-progress {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.course-progress-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid #eee;
+}
+
+.course-progress-item:last-child {
+  border-bottom: none;
+}
+
+.course-info {
+  flex: 1;
+}
+
+.course-info h3 {
+  margin: 0 0 var(--spacing-sm) 0;
+  font-size: var(--font-size-md);
+}
+
+.progress-bar-container {
+  height: 8px;
+  background-color: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: var(--spacing-xs);
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+
+.progress-text {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.continue-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.continue-button:hover {
+  background-color: var(--primary-dark);
+  text-decoration: none;
+  color: white;
+}
+
+.view-all-progress {
+  display: block;
+  text-align: center;
+  margin-top: var(--spacing-md);
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.no-data-message {
+  color: var(--text-secondary);
+  text-align: center;
+  padding: var(--spacing-md) 0;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .profile-summary,
+  .recent-jobs,
+  .applications,
+  .training {
+    grid-column: 1;
+  }
+  
+  .profile-summary {
+    grid-row: 1;
+  }
+  
+  .recent-jobs {
+    grid-row: 2;
+  }
+  
+  .applications {
+    grid-row: 3;
+  }
+  
+  .training {
+    grid-row: 4;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-container {
+    padding: var(--spacing-md);
+  }
+  
+  .profile-details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .job-item,
+  .application-item,
+  .course-progress-item {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .job-actions,
+  .application-status {
+    align-items: flex-start;
+    margin-top: var(--spacing-sm);
+  }
+}
